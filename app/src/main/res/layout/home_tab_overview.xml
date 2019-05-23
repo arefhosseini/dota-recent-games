@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/scrollView"
+        android:layout_weight="1"
+        android:fillViewport="false"
+        android:textColor="#000000"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailLinearLayout">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                card_view:cardBackgroundColor="@android:color/white"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="2dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:background="#a7f4e7"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+                        <ImageView
+                            android:id="@+id/heroImageInflate"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@mipmap/summary"
+                            android:layout_marginRight="5dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Summary"
+                            android:layout_gravity="center"
+                            android:textSize="14sp"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:baselineAligned="false"
+                        android:layout_weight="1"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:id="@+id/total_last_match_date"
+                                android:textSize="12sp"
+                                android:textColor="#000000"
+                                android:layout_gravity="center"
+                                android:gravity="left" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Last Match"
+                                android:id="@+id/textView10"
+                                android:textSize="10sp"
+                                android:textColor="#484848"
+                                android:layout_gravity="center"
+                                android:gravity="left" />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:id="@+id/total_matches"
+                                android:textSize="12sp"
+                                android:textColor="#000000"
+                                android:layout_gravity="center"
+                                android:gravity="left" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Matches"
+                                android:id="@+id/textView13"
+                                android:textSize="10sp"
+                                android:textColor="#484848"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="left" />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:id="@+id/total_win_rate"
+                                android:textSize="12sp"
+                                android:textColor="#000000"
+                                android:layout_gravity="center"
+                                android:gravity="left" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Win Rate"
+                                android:id="@+id/textView15"
+                                android:textSize="10sp"
+                                android:textColor="#484848"
+                                android:layout_gravity="center"
+                                android:gravity="left" />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:id="@+id/total_kda"
+                                android:textSize="12sp"
+                                android:textColor="#000000"
+                                android:layout_gravity="center"
+                                android:gravity="left" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="KDA"
+                                android:id="@+id/textView15"
+                                android:textSize="10sp"
+                                android:textColor="#484848"
+                                android:layout_gravity="center"
+                                android:gravity="left" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                card_view:cardBackgroundColor="@android:color/white"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="2dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:background="#4acb52"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+                        <ImageView
+                            android:id="@+id/heroImageInflate"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@mipmap/star"
+                            android:layout_marginRight="5dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Most Played Heroes"
+                            android:layout_gravity="center"
+                            android:textSize="14sp"
+                            android:textColor="#000000" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical">
+
+                            <LinearLayout
+                                android:id="@+id/more_most_played_hero_layout"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="5dp"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:id="@+id/imageView3"
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:src="@mipmap/more"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_gravity="center" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="More"
+                                    android:textSize="14sp"
+                                    android:textColor="#000000"
+                                    android:id="@+id/textView14"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView"
+                            android:textColor="#000000"
+                            android:textSize="12sp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_horizontal"
+                            android:layout_marginLeft="5dp" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Matches"
+                                android:id="@+id/textView12"
+                                android:textColor="#000000"
+                                android:textSize="10sp"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center" />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="45dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Win Rate"
+                                android:id="@+id/textView20"
+                                android:textColor="#000000"
+                                android:textSize="10sp"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical" />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="KDA"
+                                android:id="@+id/textView21"
+                                android:textColor="#000000"
+                                android:textSize="11sp"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center" />
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="GPM"
+                                android:id="@+id/textView22"
+                                android:textColor="#000000"
+                                android:textSize="11sp"
+                                android:layout_gravity="center"
+                                android:gravity="center_horizontal" />
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:text="XPM"
+                            android:id="@+id/textView6"
+                            android:textColor="#000000"
+                            android:textSize="11sp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"/>
+
+                    <LinearLayout
+                        android:id="@+id/mostPlayedHeroesLayout"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                card_view:cardBackgroundColor="@android:color/white"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="2dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:background="#ffa616"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/hero_image_player"
+                            android:src="@mipmap/style"
+                            android:layout_marginRight="5dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Player Style"
+                            android:layout_gravity="center"
+                            android:textSize="14sp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Last 20 match"
+                            android:layout_gravity="center"
+                            android:textSize="12sp"
+                            android:textColor="#3c3c3c"
+                            android:gravity="right"
+                            android:layout_marginRight="5dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.github.mikephil.charting.charts.RadarChart
+                            android:id="@+id/playerStyleChart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:minWidth="180dp"
+                            android:minHeight="180dp"
+                            android:layout_weight="2" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:minWidth="130dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="right"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="35dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:id="@+id/average_gpm"
+                                    android:textSize="10sp"
+                                    android:textColor="@color/darkOrange"
+                                    android:layout_gravity="center"
+                                    android:gravity="left" />
+
+                                <TextView
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Avg GPM"
+                                    android:id="@+id/textView24"
+                                    android:textSize="10sp"
+                                    android:textColor="#000000"
+                                    android:layout_gravity="center"
+                                    android:gravity="left" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="right"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="35dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:id="@+id/average_xpm"
+                                    android:textSize="10sp"
+                                    android:textColor="@color/darkOrange"
+                                    android:layout_gravity="center"
+                                    android:gravity="left" />
+
+                                <TextView
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Avg XPM"
+                                    android:id="@+id/textView26"
+                                    android:textSize="10sp"
+                                    android:textColor="#000000"
+                                    android:layout_gravity="center"
+                                    android:gravity="left" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="right"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="35dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:id="@+id/average_last_hit"
+                                    android:textSize="10sp"
+                                    android:textColor="@color/darkOrange"
+                                    android:layout_gravity="center"
+                                    android:gravity="left" />
+
+                                <TextView
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Avg Last Hits"
+                                    android:id="@+id/textView28"
+                                    android:textSize="10sp"
+                                    android:textColor="#000000"
+                                    android:layout_gravity="center"
+                                    android:gravity="left" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="130dp"
+                                android:layout_height="1dp"
+                                android:background="@android:color/darker_gray"
+                                android:layout_gravity="right" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="right"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="35dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:id="@+id/average_kills"
+                                    android:textSize="10sp"
+                                    android:textColor="@color/darkOrange"
+                                    android:layout_gravity="center"
+                                    android:gravity="left" />
+
+                                <TextView
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Avg Kills"
+                                    android:id="@+id/textView30"
+                                    android:textSize="10sp"
+                                    android:textColor="#000000"
+                                    android:layout_gravity="center"
+                                    android:gravity="left" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="right"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="35dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:id="@+id/average_deaths"
+                                    android:textSize="10sp"
+                                    android:textColor="@color/darkOrange"
+                                    android:layout_gravity="center"
+                                    android:gravity="left" />
+
+                                <TextView
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Avg Deaths"
+                                    android:id="@+id/textView32"
+                                    android:textSize="10sp"
+                                    android:textColor="#000000"
+                                    android:layout_gravity="center"
+                                    android:gravity="left" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="right"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="35dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:id="@+id/average_assists"
+                                    android:textSize="10sp"
+                                    android:textColor="@color/darkOrange"
+                                    android:layout_gravity="center"
+                                    android:gravity="left" />
+
+                                <TextView
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Avg Assists"
+                                    android:id="@+id/textView34"
+                                    android:textSize="10sp"
+                                    android:textColor="#000000"
+                                    android:layout_gravity="center"
+                                    android:gravity="left" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="130dp"
+                                android:layout_height="1dp"
+                                android:background="@android:color/darker_gray"
+                                android:layout_gravity="right" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="right"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="35dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:id="@+id/average_hero_damage"
+                                    android:textSize="10sp"
+                                    android:textColor="@color/darkOrange"
+                                    android:layout_gravity="center"
+                                    android:gravity="left" />
+
+                                <TextView
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Avg Hero Damage"
+                                    android:id="@+id/textView36"
+                                    android:textSize="10sp"
+                                    android:textColor="#000000"
+                                    android:layout_gravity="center"
+                                    android:gravity="left" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="right"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="35dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:id="@+id/average_tower_damage"
+                                    android:textSize="10sp"
+                                    android:textColor="@color/darkOrange"
+                                    android:layout_gravity="center"
+                                    android:gravity="left" />
+
+                                <TextView
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Avg Tower Damage"
+                                    android:id="@+id/textView39"
+                                    android:textSize="10sp"
+                                    android:textColor="#000000"
+                                    android:layout_gravity="center"
+                                    android:gravity="left" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="130dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="right"
+                                android:layout_marginBottom="5dp">
+
+                                <TextView
+                                    android:layout_width="35dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:id="@+id/average_hero_heal"
+                                    android:textSize="10sp"
+                                    android:textColor="@color/darkOrange"
+                                    android:layout_gravity="center"
+                                    android:gravity="left" />
+
+                                <TextView
+                                    android:layout_width="90dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Avg Heal"
+                                    android:id="@+id/textView41"
+                                    android:textSize="10sp"
+                                    android:textColor="#000000"
+                                    android:layout_gravity="center"
+                                    android:gravity="left|center" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:id="@+id/loading_image"
+        android:src="@mipmap/splash_image"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center"
+        android:gravity="top"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/no_connection_layout"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/no_connection_image"
+                android:src="@mipmap/no_connection"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"
+                android:gravity="top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Internet Connection"
+                android:id="@+id/no_connection_text"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Try Again"
+                android:id="@+id/no_connection_button"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/expose_public_match_layout"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/expose_public_match_image"
+                    android:src="@mipmap/alert"
+                    android:background="@android:color/transparent"
+                    android:gravity="top" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You should enable the &quot;Expose Public Match Data&quot; setting for Analysing."
+                    android:id="@+id/expose_public_match_text"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:gravity="left"
+                    android:layout_marginLeft="5dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See Tutorial"
+                android:id="@+id/expose_public_match_button"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

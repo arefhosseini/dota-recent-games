@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/menu_top" android:checkableBehavior="none"
+        android:layout_gravity="left" >
+        <item
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nav_friends"
+            android:gravity="left"
+
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="View Friends" />
+        <item
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nav_favorite"
+            android:gravity="left"
+            android:icon="@drawable/ic_star_border_black_24dp"
+            android:title="Favorite Matches" />
+
+        <item
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:title="Info" />
+        <item
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_help_outline_black_24dp"
+            android:title="About Us" />
+    </group>
+
+    <group android:id="@+id/menu_bottom" android:checkableBehavior="none">
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="Share" />
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nav_signOut"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Sign out" />
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="Exit" />
+    </group>
+
+</menu>

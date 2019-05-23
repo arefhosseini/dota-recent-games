@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:id="@+id/total_name_team"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical"
+            android:maxLength="32"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="5" />
+
+    <TextView
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:text="859.9k"
+        android:id="@+id/total_gold_team"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="33dp"
+        android:layout_height="wrap_content"
+        android:text="1800"
+        android:id="@+id/last_hit_team"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5" />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:id="@+id/deny_team"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5" />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="1500"
+        android:id="@+id/gold_per_minute_team"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="1500"
+        android:id="@+id/xp_per_minute_team"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal" />
+</LinearLayout>

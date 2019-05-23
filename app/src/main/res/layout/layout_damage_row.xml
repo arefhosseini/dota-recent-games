@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="22dp"
+                android:id="@+id/hero_image_player"
+                android:src="@mipmap/invoker_lg"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="user name"
+                android:id="@+id/person_name_player"
+                android:textColor="#000000"
+                android:textSize="11sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:maxLength="18" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="100.0k"
+            android:id="@+id/hero_damage_player"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="10.5k"
+            android:id="@+id/hero_heal_player"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="105.2k"
+            android:id="@+id/tower_damage_player"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+</LinearLayout>
